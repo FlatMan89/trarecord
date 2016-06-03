@@ -1,6 +1,5 @@
 package com.fm.wechat;
 
-import com.fm.common.model.User;
 import com.jfinal.core.Controller;
 
 public class WeChatController extends Controller{
@@ -15,7 +14,6 @@ public class WeChatController extends Controller{
 	}
 	
 	public void login(){
-		User user = getModel(User.class);
 		boolean loginin = true;
 		if(loginin){
 			setSessionAttr("userid", "123");
