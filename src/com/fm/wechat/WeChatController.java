@@ -16,8 +16,6 @@ public class WeChatController extends Controller{
 	
 	public void login(){
 		User user = getModel(User.class);
-		System.out.println(user.getMobile());
-		System.out.println(user.getPassword());
 		boolean loginin = true;
 		if(loginin){
 			setSessionAttr("userid", "123");
