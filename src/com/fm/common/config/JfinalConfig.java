@@ -57,9 +57,5 @@ public class JfinalConfig extends JFinalConfig{
 	public static C3p0Plugin createC3p0Plugin() {
 		return new C3p0Plugin(PropKit.get("jdbcUrl"), PropKit.get("user"), PropKit.get("password").trim());
 	}
-	
-	public static void main(String[] args) {
-		JFinal.start("WebRoot", 80, "/", 5);
-	}
 
 }
