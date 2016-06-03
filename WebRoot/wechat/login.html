@@ -1,0 +1,25 @@
+<#include "/wechat/common/_layout.html"/>
+<@htmlHead title="转账记录">
+	<link rel="stylesheet" href="../static/css/weui.css">
+	<link rel="stylesheet" href="../static/css/jquery-weui.css">
+</@htmlHead>
+<@htmlBody>
+<form action="/wechat/login" method="post">
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label class="weui_label">手机</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<input class="weui_input" name="user.mobile" type="tel" placeholder="请输入手机号码..">
+			</div>
+		</div>
+		<div class="weui_cell">
+			<div class="weui_cell_hd"><label class="weui_label">密码</label></div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<input class="weui_input" name="user.password" type="password" placeholder="请输入密码..">
+			</div>
+		</div>
+	</div>
+	<br>
+	<button type="submit" class="weui_btn weui_btn_primary">登录</button>
+</form>
+</@htmlBody>

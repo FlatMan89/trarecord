@@ -1,0 +1,53 @@
+<#include "/wechat/common/_layout.html"/>
+<@htmlHead title="转账记录">
+	<link rel="stylesheet" href="../static/css/weui.css">
+	<link rel="stylesheet" href="../static/css/jquery-weui.css">
+</@htmlHead>
+<@htmlBody>
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide">
+	    	<img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1n3rZHFXXXXX9XFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt="">
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i4/TB10rkPGVXXXXXGapXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt="">
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i1/TB1kQI3HpXXXXbSXFXXXXXXXXXX_!!0-item_pic.jpg_320x320q60.jpg" alt="">
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="weui_grids">
+	  <a href="javascript:;" class="weui_grid js_grid" data-id="button">
+	    <div class="weui_grid_icon">
+	      <img src="../static/images/icon/icon_nav_button.png" alt="">
+	    </div>
+	    <p class="weui_grid_label">统计</p>
+	  </a>
+	  <a href="list" class="weui_grid js_grid" data-id="cell">
+	    <div class="weui_grid_icon">
+	      <img src="../static/images/icon/icon_nav_cell.png" alt="">
+	    </div>
+	    <p class="weui_grid_label">详情</p>
+	  </a>
+	  <a href="javascript:;" class="weui_grid js_grid" data-id="toast">
+	    <div class="weui_grid_icon">
+	      <img src="../static/images/icon/icon_nav_toast.png" alt="">
+	    </div>
+	    <p class="weui_grid_label">
+	      帮助
+	    </p>
+	  </a>
+	</div>
+	<script src="../static/js/jquery-2.1.4.js"></script>
+	<script src="../static/js/jquery-weui.js"></script>
+	<script type="text/javascript" src="../static/js/city-picker.js" charset="utf-8"></script>
+	<script type='text/javascript' src='../static/js/swiper.js' charset='utf-8'></script>
+	<script type="text/javascript">
+		$(".swiper-container").swiper({
+			loop:true,
+			autoplay:3000
+		});
+	</script>
+</@htmlBody>
